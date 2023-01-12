@@ -23,14 +23,14 @@ const Home = () => {
 
   useEffect(() => {
     dispatch(movieAction.getMovies());
-    console.log("use effect ");
+
 
   }, []);
-
-  if (loading) return (
-    <div>
-      <ClipLoader color="red" loading={loading} size={150} aria-label="Loading Spinner" data-testid="loader" />
-    </div>
+  //if (loading) return
+  if (loading)  return (
+  
+      <ClipLoader  className="spinner" color="red" loading={loading} size={50} />
+  
   ) 
   return (
     <div>
