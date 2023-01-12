@@ -13,7 +13,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 
 function App() {
   return (
-    <div>
+    <div style={{ backgroundColor: 'black', }}>
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
